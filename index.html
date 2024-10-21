@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulpdiensten Ondersteuning</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Achtergrond en centrale lay-out */
+        body {
+            background: url('https://cdn.discordapp.com/attachments/1295030531712356372/1295031895553343498/fho-ryan6.png?ex=67170f30&is=6715bdb0&hm=ae15ea350483cfba00635d1e745316786b84475ca445ac1e50bfe8d2b73f76f4') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+
+        /* Container voor content */
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        /* Stijl voor de knoppen */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .button {
+            background-color: #1e90ff;
+            border: none;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #4682b4;
+        }
+
+        @media (min-width: 768px) {
+            .button-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .button {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hulpdiensten Ondersteuning</h1>
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='politie.html'">Politie</button>
+            <button class="button" onclick="window.location.href='ambulance.html'">Ambulance</button>
+            <button class="button" onclick="window.location.href='brandweer.html'">Brandweer</button>
+        </div>
+    </div>
+</body>
+</html>
